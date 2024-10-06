@@ -8,17 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
 
-    <!--------styles--------->
-    <link rel="stylesheet" href="styles/pages/video-page.css"/>
-    <link rel="stylesheet" href="styles/shared/general.css"/>
-    <link rel="stylesheet" href="styles/pages/homepage/sections/horizontal-slider.css"/>
-    <link rel="stylesheet" href="styles/shared/footer.css"/>
-    <link rel="stylesheet" href="styles/shared/header.css"/>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles/homepage/sections-swiper.css">
+
+  <link rel="stylesheet" href="styles/homepage.css">
+  <link rel="stylesheet" href="styles/homepage/background-videos.css">
+  <link rel="stylesheet" href="styles/show.css">
+
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/shared/header.css">
+  <link rel="stylesheet" href="styles/shared/footer.css">
 
     <title>video-page</title>
   </head>
   <body>
-    <div class="fp-header">
+    <header class="fp-header">
       <div class="left-section">
         <a href="homepage.html">
           <div class="logo-container">
@@ -26,101 +31,135 @@
           </div>
         </a>
       </div>
-
+  
       <div class="middle-section">
         <button class="search-button">
           <img src="images/icons/search.png"/>
         </button>
-
+  
         <input class="search-bar" type="search" name="search" placeholder="Search"/>
       </div>
-
+  
       <div class="rigth-section">
         <a target="_blank" href="https://www.instagram.com/faridpatinoo/profilecard/?igsh=MTZ3NHM1bWo4ZnpvaQ==">
           <div class="instagram-icon-container">
             <img src="images/icons/instagram.png">
           </div>
         </a>
-
+  
         <a target="_blank" href="https://www.instagram.com/faridpatinoo/profilecard/?igsh=MTZ3NHM1bWo4ZnpvaQ==">
           <div class="profile-picture-container">
             <img src="images/profile-picture/farid-picture.JPG" />
           </div>
         </a>
       </div>
-    </div>
-
-    <div class="preview-container js-preview-container">
-    </div>
-
-    <div class="videos-section">
-      <div class="section-title related-title">
-        <a class="title-name click-title">
-          Related
-        </a>
-      </div>
-
-      <div class="grid-container">
-        <ul class="grid-list js-grid-container">
-        </ul>
-      </div>
-
-      <div class="left-arrow-container">
-        <div class="pre-container">
-          <button class="pre-arrow-button">
-            <img class="pre-icon" src="images/icons/arrow.png"/>
-          </button>
-        </div>
-      </div>
-
-      <div class="right-arrow-container">
-        <div class="next-container">
-          <button class="next-arrow-button">
-            <img class="next-icon" src="images/icons/arrow.png"/>
-          </button>
-        </div>
+    </header>
+    
+    <!--------background-video--------->
+    <div class="background-video bottom-padding">
+      <img src="images/thumbs/tops-10/top-animations/top-a-1.png"/>
+        <div class="bkg-video-info">
+          <div class="bkg-video-title">hola</div>
+          <div class="bkg-video-description">
+            hola
+          </div>
+          <a>
+            <button class="bkg-video-button">Watch Now</button>
+          </a>
       </div>
     </div>
+    
+    
+    <main class="section-container js-section-container">
+      <!-- related -->
+      <div id="swiperRef" class="swiper mySwiper">
+        <div class="section-title">Related</div>
+        <div class="swiper-wrapper">
+          <div class="horizontal-swiper-slide swiper-slide">
+            <div class="card-container">
+              <div class="image-container">
+                <img class="thumbnail" src="images/thumbs/tops-10/top-animations/top-a-1.png">
+                <button class="play-button">
+                  <img src="images/icons/play.png">
+                </button>
+              </div>
+            </div>
+  
+            <div class="card-description">
+              <p class="card-number">1</p>
+              <div class="card-title">
+                <p>Blue-bot</p>
+                <p class="card-year">2023 &#183; animation</p>
+              </div>
+            </div>
+          </div>
 
-    <div class="section-divider"></div>
-
-    <div class="videos-section">
-      <div class="section-title related-title js-discover-title">
-      </div>
-
-      <div class="grid-container">
-        <ul class="grid-list js-discover-grid">
-        </ul>
-      </div>
-
-      <div class="left-arrow-container">
-        <div class="pre-container">
-          <button class="pre-arrow-button">
-            <img class="pre-icon" src="images/icons/arrow.png"/>
-          </button>
+          <div class="horizontal-swiper-slide swiper-slide">
+            <div class="card-container">
+              <div class="image-container">
+                <img class="thumbnail" src="images/thumbs/tops-10/top-animations/top-a-1.png">
+                <button class="play-button">
+                  <img src="images/icons/play.png">
+                </button>
+              </div>
+            </div>
+  
+            <div class="card-description">
+              <p class="card-number">1</p>
+              <div class="card-title">
+                <p>Blue-bot</p>
+                <p class="card-year">2023 &#183; animation</p>
+              </div>
+            </div>
+          </div>
         </div>
+  
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-
-      <div class="right-arrow-container">
-        <div class="next-container">
-          <button class="next-arrow-button">
-            <img class="next-icon" src="images/icons/arrow.png"/>
-          </button>
+  
+      <div class="section-divider"></div>
+      
+      <!-- discover -->
+      <div id="swiperRef" class="swiper mySwiper">
+        <div class="section-title">Discover:</div>
+        <div class="swiper-wrapper">
+          <div class="horizontal-swiper-slide swiper-slide">
+            <div class="card-container">
+              <div class="image-container">
+                <img class="thumbnail" src="images/thumbs/tops-10/top-animations/top-a-1.png">
+                <button class="play-button">
+                  <img src="images/icons/play.png">
+                </button>
+              </div>
+            </div>
+  
+            <div class="card-description">
+              <p class="card-number">1</p>
+              <div class="card-title">
+                <p>Blue-bot</p>
+                <p class="card-year">2023 &#183; animation</p>
+              </div>
+            </div>
+          </div>
         </div>
+  
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </div>
+    </main>
 
     <footer class="footer">
       <div class="copyright">
         Copyright &copy; 2024 FaridPatinoo Inc. All rights reserved.
       </div>
-
+  
       <div class="contact-info">
         <a href="mailto:fc.patino5@gmail.com">Email Me</a>
         <a href="tel:+573102155997">Call Me</a>
       </div>
     </footer>
 
-    <script src="scripts/video-page.js" type="module"></script>
+    <script src="scripts/show.js" type="module"></script>
   </body>
 </html>

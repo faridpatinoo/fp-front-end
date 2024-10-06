@@ -1233,7 +1233,7 @@ export const videos = [
 
     isBackground: true,
   },
- 
+
   //TV
   {
     id: 76,
@@ -1557,3 +1557,11 @@ export const videos = [
   },
 
 ]
+
+
+export async function loadVideosFetch() {
+  const promise = await fetch('https://fp-plus-emhtdmegc3e0gvb2.eastus2-01.azurewebsites.net/api/videos')
+  const videoData = await promise.json();
+
+  console.log(videoData.videos)
+}

@@ -7,12 +7,13 @@ export function loadSections () {
 
   sections.forEach(section => {
     if (section.category !== 'originals'
-      && section.category !== 'Top 10'
-      //&& section.category !== 'Search by Brand'
-      ){ 
+      && section.category !== 'Top 10'){ 
       mainHTML += `
         <div id="swiperRef" class="swiper mySwiper">
+         <a href="section.html"> 
           <div class="section-title">${section.category}</div>
+         </a>
+
           <div class="swiper-wrapper">
             ${swiperSlide(section)}
           </div>
@@ -78,7 +79,7 @@ export function loadSections () {
     videos.forEach(video => {
       if (video.top <= 10 && video.category === section.category) {
         html += `
-          <div class="${section.type}-swiper-slide swiper-slide">
+          <div class="${section.type}-swiper-slide swiper-slide js-swiper-slide">
             <div class="${section.type}-card-container card-container">
               <div class="image-container">
                 <img class="thumbnail ${section.type}-thumbnail" src="${video.image}">
@@ -154,4 +155,11 @@ export function loadSections () {
 
   document.querySelector('.js-section-container')
     .innerHTML = mainHTML;
+
+  document.querySelectorAll('.js-swiper-slide')
+    .forEach(video => {
+      video.addEventListener('click', () => { 
+        window.location.href = 'show.html';
+      });
+    });
 }    
