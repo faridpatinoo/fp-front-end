@@ -1,0 +1,68 @@
+.original-container {
+  margin: 20px auto;
+  max-width: 1665px;
+
+  height: 700px;
+  position: relative;
+}
+
+.original-image-container {
+  height: 100%;
+  width: 100%;
+}
+
+.original-thumbnail {
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+  object-position: left;
+
+  filter: invert(1);
+  opacity: 0.3;
+}
+
+.swiper-absolute {
+  position: absolute;
+  bottom: 0;
+
+  height: 300px;
+}
+
+/* info */
+
+.original-info {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  right: 50px;
+}
+
+.original-title {
+  font-size: 20px;
+  padding-bottom: 20px;
+  max-width: 399px;
+}
+
+.original-title p {
+  font-size: 40px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+}
+
+.original-description p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.567);
+}
+
+.original-description p {
+  display: -webkit-box;           /* Crea un contenedor flexible */
+  -webkit-box-orient: vertical;   /* Orienta el contenedor en vertical */
+  -webkit-line-clamp: 3;          /* Limita el texto a 3 líneas */
+  overflow: hidden;               /* Oculta el texto desbordado */
+  text-overflow: ellipsis;        /* Muestra "..." al final del texto truncado */
+  max-width: 50%;                /* Asegura que no se desborde horizontalmente */
+  line-height: 1.5;               /* Ajusta la altura de la línea */
+  height: calc(1.5em * 3);        /* Calcula la altura para 3 líneas */
+}
+

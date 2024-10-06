@@ -1,0 +1,32 @@
+.top-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.secret-number {
+  font-size: 100px;
+  color: #ff4500;
+
+  transition: 0.15s ease-in;
+  opacity: 0;
+
+  cursor: pointer;
+}
+
+.vertical-swiper-slide:hover .secret-number {
+  opacity: 1;
+  font-size: 300px;
+}
+
+.thumbnail-border {
+  border: #ff4500 solid 5px;
+}
+
+.divider-color {
+  margin: 20px auto;
+  max-width: 1665px;
+  border: solid #ff4500 1px;
+}
