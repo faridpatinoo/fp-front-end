@@ -2,12 +2,12 @@ import { videos } from "../data/data.js";
 import { sections } from "../data/data.js";
 import { logos } from "../data/data.js";
 
-export function loadSections () { 
+export function loadSections() {
   let mainHTML = '';
 
   sections.forEach(section => {
     if (section.category !== 'originals'
-      && section.category !== 'Top 10'){ 
+      && section.category !== 'Top 10') {
       mainHTML += `
         <div id="swiperRef" class="swiper mySwiper">
          <a href="section.html"> 
@@ -72,14 +72,14 @@ export function loadSections () {
     };
   });
 
-  function swiperSlide (section) {
-    videos.sort((a,b) => a.top - b.top);
+  function swiperSlide(section) {
+    videos.sort((a, b) => a.top - b.top);
     let html = '';
 
     videos.forEach(video => {
       if (video.top <= 10 && video.category === section.category) {
         html += `
-          <div class="${section.type}-swiper-slide swiper-slide js-swiper-slide">
+          <a href="show.html?videoId=${video.id}" class="${section.type}-swiper-slide swiper-slide js-swiper-slide">
             <div class="${section.type}-card-container card-container">
               <div class="image-container">
                 <img class="thumbnail ${section.type}-thumbnail" src="${video.image}">
@@ -96,7 +96,7 @@ export function loadSections () {
                 <p class="card-year">${video.year} &#183; ${video.type}</p>
               </div>
             </div>
-          </div>
+          </a>
         `;
       }
     });
@@ -119,8 +119,8 @@ export function loadSections () {
   }
 
   function swiperSlideTop10() {
-    videos.sort((a,b) => {
-      if(a.isBest && b.isBest) {
+    videos.sort((a, b) => {
+      if (a.isBest && b.isBest) {
         return a.isBest.top - b.isBest.top;
       } else if (a.isBest) {
         return -1;
@@ -156,10 +156,5 @@ export function loadSections () {
   document.querySelector('.js-section-container')
     .innerHTML = mainHTML;
 
-  document.querySelectorAll('.js-swiper-slide')
-    .forEach(video => {
-      video.addEventListener('click', () => { 
-        window.location.href = 'show.html';
-      });
-    });
+
 }    
