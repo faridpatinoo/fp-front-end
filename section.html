@@ -8,18 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet"/>
 
-    <link rel="stylesheet" href="styles/shared/general.css"/>
-    <link rel="stylesheet" href="styles/shared/header.css"/>
-    <link rel="stylesheet" href="styles/shared/footer.css"/>
-    <link rel="stylesheet" href="styles/pages/homepage/sections/horizontal-slider.css"/>
-    <link rel="stylesheet" href="styles/pages/brand-page.css"/>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/section.css">
 
-    <title>Brands-Page</title>
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/header.css">
+    <link rel="stylesheet" href="styles/shared/footer.css">
+
+    <title>sections</title>
   </head>
   <body>
     <div class="fp-header">
       <div class="left-section">
-        <a href="homepage.html">
+        <a href="index.html">
           <div class="logo-container">
             <img class="fp-logo" src="images/logos/fp-logo.png"/>
           </div>
@@ -49,8 +50,31 @@
       </div>
     </div>
 
-    <div class="videos-section brand-section js-brand-section">
-    </div>
+    <main class="section-container">
+      <div class="section-title">Aniamtions</div>
+      <div class="container-grid">
+        <a href="show.html">
+          <div class="card">
+            <div class="card-container">
+              <div class="image-container">
+                <img class="thumbnail" src="images/thumbs/tops-10/top-animations/top-a-1.png">
+                <button class="play-button">
+                  <img src="images/icons/play.png">
+                </button>
+              </div>
+            </div>
+  
+            <div class="card-description">
+              <p class="card-number">1</p>
+              <div class="card-title">
+                <p>Blue-bot</p>
+                <p class="card-year">2023 &#183; animation</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
 
     <footer class="footer">
       <div class="copyright">

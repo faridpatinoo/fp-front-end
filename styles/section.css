@@ -1,16 +1,15 @@
-.brand-section {
-  padding-top: 70px;
-}
-.fix-title {
-  padding-top: 7px;
+.section-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1665px;
 }
 
-.infinite-grid-list {
+.container-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.title-opacity {
-  opacity: 1;
+.section-title {
+  padding-top: 70px;
 }

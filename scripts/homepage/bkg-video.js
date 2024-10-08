@@ -3,15 +3,15 @@ import { videos } from "../data/data.js";
 export function loadBackgoundVideo() {
   let html = '';
 
-  videos.sort((a,b) => {
-      if(a.brand > b.brand) {
-        return 1;
-      } else if (a.brand < b.brand) {
-        return -1;
-      } else {
-        return 0;
-      }
-    })
+  videos.sort((a, b) => {
+    if (a.brand > b.brand) {
+      return 1;
+    } else if (a.brand < b.brand) {
+      return -1;
+    } else {
+      return 0;
+    }
+  })
 
   videos.forEach(video => {
     if (video.isBackground) {
@@ -24,7 +24,7 @@ export function loadBackgoundVideo() {
                 <div class="bkg-video-description">
                   ${video.description}
                 </div>
-                <a>
+                <a href="show.html">
                   <button class="bkg-video-button">Watch Now</button>
                 </a>
             </div>
