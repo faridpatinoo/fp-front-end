@@ -24,7 +24,7 @@ export function loadBackgoundVideo() {
                 <div class="bkg-video-description">
                   ${video.description}
                 </div>
-                <a href="show.html?videoId=${video.id}">
+                <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCatergory=${video.category}">
                   <button class="bkg-video-button">Watch Now</button>
                 </a>
             </div>
