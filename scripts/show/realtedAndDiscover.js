@@ -2,25 +2,19 @@ import { videos } from "../data/data.js";
 
 export function relatedAndDiscover() {
   const url = new URL(window.location.href);
+  const videoId = Number(url.searchParams.get('videoId'));
   const videoType = url.searchParams.get('videoType');
   const videoCategory = url.searchParams.get('videoCategory');
 
   let relatedHTML = '';
-  let discoverHTML = `
-    <div class="section-title">Discover: ${videoCategory}</div>
-        <div class="swiper-wrapper">
-          ${swiperSlide()}
-        </div>
-  
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-  `;
+  let discoverHTML = '';
 
 
-  videos.forEach(video => {
-    if (video.type === videoType) {
+  videos.sort(() => Math.random() - 0.5).forEach(video => {
+    if (video.type === videoType && video.id !== videoId) {
       relatedHTML += `
-        <div class="horizontal-swiper-slide swiper-slide">
+        <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCategory=${video.category}"
+        class="horizontal-swiper-slide swiper-slide">
           <div class="card-container">
             <div class="image-container">
               <img class="thumbnail" src="${video.image}">
@@ -37,43 +31,40 @@ export function relatedAndDiscover() {
               <p class="card-year">${video.year} &#183; ${video.category}
             </div>
           </div>
-        </div>
+        </a>
+      `;
+    }
+
+    if (video.category === videoCategory && video.id !== videoId) {
+      discoverHTML += `
+          <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCategory=${video.category}"
+          class="horizontal-swiper-slide swiper-slide">
+            <div class="card-container">
+              <div class="image-container">
+                <img class="thumbnail" src="${video.image}">
+                <button class="play-button">
+                  <img src="images/icons/play.png">
+                </button>
+              </div>
+            </div>
+  
+            <div class="card-description">
+              <div class="card-title">
+                <p>${video.title}</p>
+                <p class="card-year">${video.year}</p>
+              </div>
+            </div>
+          </a>
       `;
     }
   });
 
-  function swiperSlide() {
-    let html = '';
-    videos.forEach(video => {
-      if (video.category === videoCategory) {
-        html += `
-            <div class="horizontal-swiper-slide swiper-slide">
-              <div class="card-container">
-                <div class="image-container">
-                  <img class="thumbnail" src="images/thumbs/tops-10/top-animations/top-a-1.png">
-                  <button class="play-button">
-                    <img src="images/icons/play.png">
-                  </button>
-                </div>
-              </div>
-    
-              <div class="card-description">
-                <div class="card-title">
-                  <p>Blue-bot</p>
-                  <p class="card-year">2023 &#183; animation</p>
-                </div>
-              </div>
-            </div>
-        `;
-      }
-    });
-
-    return html;
-  }
+  document.querySelector('.js-section-title')
+    .innerHTML = `Discover: ${videoCategory}`
 
   document.querySelector('.js-related-wrapper')
     .innerHTML = relatedHTML;
 
-  document.querySelector('.js-discover-section')
+  document.querySelector('.js-discover-wrapper')
     .innerHTML = discoverHTML;
 }
