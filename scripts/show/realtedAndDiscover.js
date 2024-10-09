@@ -5,12 +5,21 @@ export function relatedAndDiscover() {
   const videoType = url.searchParams.get('videoType');
   const videoCategory = url.searchParams.get('videoCategory');
 
-  console.log(videoType)
+  let relatedHTML = '';
+  let discoverHTML = `
+    <div class="section-title">Discover: ${videoCategory}</div>
+        <div class="swiper-wrapper">
+          ${swiperSlide()}
+        </div>
+  
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+  `;
 
-  let html = '';
+
   videos.forEach(video => {
     if (video.type === videoType) {
-      html += `
+      relatedHTML += `
         <div class="horizontal-swiper-slide swiper-slide">
           <div class="card-container">
             <div class="image-container">
@@ -33,6 +42,38 @@ export function relatedAndDiscover() {
     }
   });
 
+  function swiperSlide() {
+    let html = '';
+    videos.forEach(video => {
+      if (video.category === videoCategory) {
+        html += `
+            <div class="horizontal-swiper-slide swiper-slide">
+              <div class="card-container">
+                <div class="image-container">
+                  <img class="thumbnail" src="images/thumbs/tops-10/top-animations/top-a-1.png">
+                  <button class="play-button">
+                    <img src="images/icons/play.png">
+                  </button>
+                </div>
+              </div>
+    
+              <div class="card-description">
+                <div class="card-title">
+                  <p>Blue-bot</p>
+                  <p class="card-year">2023 &#183; animation</p>
+                </div>
+              </div>
+            </div>
+        `;
+      }
+    });
+
+    return html;
+  }
+
   document.querySelector('.js-related-wrapper')
-    .innerHTML = html;
+    .innerHTML = relatedHTML;
+
+  document.querySelector('.js-discover-section')
+    .innerHTML = discoverHTML;
 }
