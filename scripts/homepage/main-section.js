@@ -29,13 +29,15 @@ export function loadSections() {
     if (section.category === 'originals') {
       mainHTML += `
         <div class="original-container">
-          <div class="original-image-container">
+          <a href="section.html?videoCategory=${section.category}" class="original-image-container">
             <img class="original-thumbnail" src="images/thumbs/Originals/originals-bkg.png">
-          </div>
+          </a>
 
           <div class="original-info">
             <div class="original-title">
-              <p>FP+ Original Films</p>
+              <p>
+                <a href="section.html?videoCategory=${section.category}">FP+ Original Films</a>
+              </p>
             </div>
             <div class="original-description">
               <p>Explore my unique video creations, showcasing my talent and dedication in producing original content, from short films to documentaries.</p>
