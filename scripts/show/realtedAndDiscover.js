@@ -28,7 +28,7 @@ export function relatedAndDiscover() {
             
             <div class="card-title">
               <p>${video.title}</p>
-              <p class="card-year">${video.year} &#183; ${video.category}
+              <p class="card-year">${video.year} &#183; ${video.type}
             </div>
           </div>
         </a>
@@ -51,7 +51,6 @@ export function relatedAndDiscover() {
             <div class="card-description">
               <div class="card-title">
                 <p>${video.title}</p>
-                <p class="card-year">${video.year}</p>
               </div>
             </div>
           </a>
@@ -60,7 +59,7 @@ export function relatedAndDiscover() {
   });
 
   document.querySelector('.js-section-title')
-    .innerHTML = `Discover: ${videoCategory}`
+    .innerHTML = `<a href="section.html?videoCategory=${videoCategory}">Discover: ${videoCategory}</a>`
 
   document.querySelector('.js-related-wrapper')
     .innerHTML = relatedHTML;

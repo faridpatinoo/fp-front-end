@@ -10,7 +10,7 @@ export function loadSections() {
       && section.category !== 'Top 10') {
       mainHTML += `
         <div id="swiperRef" class="swiper mySwiper">
-         <a href="section.html"> 
+         <a href="section.html?videoCategory=${section.category}"> 
           <div class="section-title">${section.category}</div>
          </a>
 
@@ -43,7 +43,6 @@ export function loadSections() {
           </div>
 
           <div id="swiperRef" class="swiper mySwiper swiper-absolute swiper-originals">
-            <!-- <div class="section-title"></div> -->
             <div class="swiper-wrapper originals-swiper-wrapper">
               ${swiperSlide(section)}
             </div>
