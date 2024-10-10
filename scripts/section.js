@@ -2,13 +2,14 @@ import { videos } from "./data/data.js";
 
 const url = new URL(window.location.href);
 const videoCategory = url.searchParams.get('videoCategory');
+const videoBrand = url.searchParams.get('videoBrand')
 
 let sectionHTML = '';
 
 videos.forEach(video => {
-  if (video.category === videoCategory) {
+  if (video.category === videoCategory || video.brand === videoBrand) {
     sectionHTML += `
-      <a href="show.html">
+      <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCategory=${video.category}">
         <div class="card">
           <div class="card-container">
             <div class="image-container">
@@ -32,7 +33,7 @@ videos.forEach(video => {
 });
 
 document.querySelector('.js-section-title')
-  .innerHTML = `${videoCategory}`
+  .innerHTML = videoCategory || videoBrand;
 
 document.querySelector('.js-container-section-grid')
   .innerHTML = sectionHTML

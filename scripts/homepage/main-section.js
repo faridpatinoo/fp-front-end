@@ -1,6 +1,4 @@
-import { videos } from "../data/data.js";
-import { sections } from "../data/data.js";
-import { logos } from "../data/data.js";
+import { videos, sections, logos } from "../data/data.js";
 
 export function loadSections() {
   let mainHTML = '';
@@ -108,9 +106,9 @@ export function loadSections() {
         html += `
           <div class="${section.type}-swiper-slide swiper-slide">
             <div class="${section.type}-card-container card-container">
-              <div class="image-container">
+              <a href="section.html?videoBrand=${logo.brand}" class="image-container">
                 <img class="thumbnail ${section.type}-thumbnail" src="${logo.logo}">
-              </div>
+              </a>
             </div>
           </div>
         `
