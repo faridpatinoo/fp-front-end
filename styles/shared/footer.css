@@ -22,3 +22,20 @@
   padding-right: 10px;
   font-weight: lighter;
 }
+
+.footer-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+}
+
+.main-content {
+  padding-bottom: 140px;
+}
