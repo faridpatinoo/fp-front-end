@@ -221,11 +221,10 @@ export const videos = [
     brand: "Huski",
     type: "animation",
     category: "Animations",
+    tags: ['isBest'],
     year: 2023,
 
-    isBest: {
-      top: 5,
-    },
+    isBestTop: 5
   },
 
   {
@@ -238,6 +237,7 @@ export const videos = [
     brand: "HighScale",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2024,
   },
 
@@ -251,13 +251,10 @@ export const videos = [
     brand: "Go Trandier",
     type: "animation",
     category: "Animations",
+    tags: ['isBest', 'isBackground'],
     year: 2023,
 
-    isBest: {
-      top: 4,
-    },
-
-    isBackground: true,
+    isBestTop: 4
   },
 
   {
@@ -270,11 +267,10 @@ export const videos = [
     brand: "Celsius",
     type: "animation",
     category: "Animations",
+    tags: ['isBest'],
     year: 2024,
 
-    isBest: {
-      top: 2,
-    },
+    isBestTop: 2
   },
 
   {
@@ -287,6 +283,7 @@ export const videos = [
     brand: "LID",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2023,
   },
 
@@ -300,11 +297,10 @@ export const videos = [
     brand: "Mercado Libre",
     type: "animation",
     category: "Animations",
+    tags: ['isBest'],
     year: 2023,
 
-    isBest: {
-      top: 1,
-    },
+    isBestTop: 1
   },
 
   {
@@ -317,6 +313,7 @@ export const videos = [
     brand: "Mad Cave Studios",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2023,
   },
 
@@ -330,6 +327,7 @@ export const videos = [
     brand: "Go Trandier",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2023,
   },
 
@@ -343,6 +341,7 @@ export const videos = [
     brand: "HighScale",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2024
   },
 
@@ -356,6 +355,7 @@ export const videos = [
     brand: "Celsius",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2023
   },
 
@@ -369,6 +369,7 @@ export const videos = [
     brand: "Brilliant Earth",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2024,
   },
 
@@ -382,6 +383,7 @@ export const videos = [
     brand: "Olaplex",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2024,
   },
 
@@ -395,6 +397,7 @@ export const videos = [
     brand: "Wall Pilates",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2024,
   },
 
@@ -408,6 +411,7 @@ export const videos = [
     brand: "Olaplex",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2024
   },
 
@@ -421,6 +425,7 @@ export const videos = [
     brand: "WallPilates",
     type: "animation",
     category: "Animations",
+    tags: [],
     year: 2023,
   },
 
@@ -435,6 +440,7 @@ export const videos = [
     brand: "Prolon",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -448,6 +454,7 @@ export const videos = [
     brand: "8Sheep",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -461,6 +468,7 @@ export const videos = [
     brand: "Lumineux",
     type: "animation",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -474,6 +482,7 @@ export const videos = [
     brand: "Kitsch",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -487,6 +496,7 @@ export const videos = [
     brand: "LID",
     type: "animation",
     category: "Reels",
+    tags: [],
     year: 2023
   },
 
@@ -500,6 +510,7 @@ export const videos = [
     brand: "SpoiledChild",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -513,6 +524,7 @@ export const videos = [
     brand: "8sheep",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -526,6 +538,7 @@ export const videos = [
     brand: "ContentJet",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -539,6 +552,7 @@ export const videos = [
     brand: "Kitsch",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -552,11 +566,10 @@ export const videos = [
     brand: "LID",
     type: "vertical",
     category: "Reels",
+    tags: ['isBest'],
     year: 2024,
 
-    isBest: {
-      top: 3,
-    }
+    isBestTop: 3
   },
 
   {
@@ -569,6 +582,7 @@ export const videos = [
     brand: "Maelys",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -582,6 +596,7 @@ export const videos = [
     brand: "Obvi",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -595,6 +610,7 @@ export const videos = [
     brand: "Paramount+",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024,
   },
 
@@ -608,9 +624,8 @@ export const videos = [
     brand: "Prolon",
     type: "vertical",
     category: "Reels",
+    tags: ['isBackground'],
     year: 2024,
-
-    isBackground: true,
   },
 
   {
@@ -623,6 +638,7 @@ export const videos = [
     brand: "SpoiledChild",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -636,6 +652,7 @@ export const videos = [
     brand: "Kitsch",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -649,6 +666,7 @@ export const videos = [
     brand: "Maelys",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -662,6 +680,7 @@ export const videos = [
     brand: "Obvi",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -675,6 +694,7 @@ export const videos = [
     brand: "Kitsch",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -688,6 +708,7 @@ export const videos = [
     brand: "SpoiledChild",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -701,6 +722,7 @@ export const videos = [
     brand: "Kitsch",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -714,6 +736,7 @@ export const videos = [
     brand: "Obvi",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -727,6 +750,7 @@ export const videos = [
     brand: "Maelys",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -740,6 +764,7 @@ export const videos = [
     brand: "Maelys",
     type: "vertical",
     category: "Reels",
+    tags: [],
     year: 2024
   },
 
@@ -754,6 +779,7 @@ export const videos = [
     brand: "Nutrl",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -767,6 +793,7 @@ export const videos = [
     brand: "Celsius",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -780,6 +807,7 @@ export const videos = [
     brand: "Biohm",
     type: "animation",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -793,6 +821,7 @@ export const videos = [
     brand: "Prose",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -806,6 +835,7 @@ export const videos = [
     brand: "8Sheep",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -819,9 +849,8 @@ export const videos = [
     brand: "Detective For a Day",
     type: "square",
     category: "Facebook",
+    tags: ['isBackground'],
     year: 2024,
-
-    isBackground: true,
   },
 
   {
@@ -834,6 +863,7 @@ export const videos = [
     brand: "Get Dirty",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -847,6 +877,7 @@ export const videos = [
     brand: "HighScale",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -860,6 +891,7 @@ export const videos = [
     brand: "Honey Love",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -873,6 +905,7 @@ export const videos = [
     brand: "Huski",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -886,6 +919,7 @@ export const videos = [
     brand: "Kate Spade",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -899,6 +933,7 @@ export const videos = [
     brand: "Laundry Sauce",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -912,6 +947,7 @@ export const videos = [
     brand: "Maelys",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -925,6 +961,7 @@ export const videos = [
     brand: "Nutrl",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -938,6 +975,7 @@ export const videos = [
     brand: "Olaplex",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -951,6 +989,7 @@ export const videos = [
     brand: "Maelys",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -964,6 +1003,7 @@ export const videos = [
     brand: "Detective For a Day",
     type: "animation",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -977,6 +1017,7 @@ export const videos = [
     brand: "8Sheep",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -990,6 +1031,7 @@ export const videos = [
     brand: "Prolon",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -1003,6 +1045,7 @@ export const videos = [
     brand: "Tecovas",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -1016,6 +1059,7 @@ export const videos = [
     brand: "Temu",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -1029,6 +1073,7 @@ export const videos = [
     brand: "Toms",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -1042,6 +1087,7 @@ export const videos = [
     brand: "8Sheep",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -1055,6 +1101,7 @@ export const videos = [
     brand: "Detective For a Day",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -1068,6 +1115,7 @@ export const videos = [
     brand: "Tecovas",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -1081,6 +1129,7 @@ export const videos = [
     brand: "Maelys",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -1094,6 +1143,7 @@ export const videos = [
     brand: "Paramount+",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -1107,6 +1157,7 @@ export const videos = [
     brand: "WellTech",
     type: "square",
     category: "Facebook",
+    tags: [],
     year: 2024,
   },
 
@@ -1120,6 +1171,7 @@ export const videos = [
     brand: "Tecovas",
     type: "animation",
     category: "Facebook",
+    tags: [],
     year: 2024
   },
 
@@ -1134,6 +1186,7 @@ export const videos = [
     brand: "",
     type: "animation",
     category: "originals",
+    tags: [],
     year: 2023
   },
 
@@ -1147,6 +1200,7 @@ export const videos = [
     brand: "",
     type: "animation",
     category: "originals",
+    tags: [],
     year: 2023
   },
 
@@ -1160,6 +1214,7 @@ export const videos = [
     brand: "",
     type: "animation",
     category: "originals",
+    tags: [],
     year: 2023,
   },
 
@@ -1173,6 +1228,7 @@ export const videos = [
     brand: "",
     type: "animation",
     category: "originals",
+    tags: [],
     year: 2023
   },
 
@@ -1186,6 +1242,7 @@ export const videos = [
     brand: "",
     type: "animation",
     category: "originals",
+    tags: [],
     year: 2023
   },
 
@@ -1199,11 +1256,10 @@ export const videos = [
     brand: "",
     type: "animation",
     category: "originals",
+    tags: ['isBest'],
     year: 2023,
 
-    isBest: {
-      top: 10,
-    }
+    isBestTop: 10
   },
 
   {
@@ -1216,6 +1272,7 @@ export const videos = [
     brand: "",
     type: "animation",
     category: "originals",
+    tags: [],
     year: 2023
   },
 
@@ -1229,9 +1286,8 @@ export const videos = [
     brand: "",
     type: "animation",
     category: "originals",
+    tags: ['isBackground'],
     year: 2023,
-
-    isBackground: true,
   },
 
   //TV
@@ -1245,6 +1301,7 @@ export const videos = [
     brand: "StarBucks",
     type: "horizontal",
     category: "Tv",
+    tags: [],
     year: 2023,
   },
 
@@ -1258,6 +1315,7 @@ export const videos = [
     brand: "HONDA",
     type: "horizontal",
     category: "Tv",
+    tags: [],
     year: 2023,
   },
 
@@ -1271,11 +1329,10 @@ export const videos = [
     brand: "Planet Fitness",
     type: "animation",
     category: "Tv",
+    tags: ['isBest'],
     year: 2023,
 
-    isBest: {
-      top: 9,
-    },
+    isBestTop: 9
   },
   {
     id: 79,
@@ -1287,13 +1344,10 @@ export const videos = [
     brand: "StarBucks",
     type: "animation",
     category: "Tv",
+    tags: ['isBest', 'isBackground'],
     year: 2023,
 
-    isBest: {
-      top: 6,
-    },
-
-    isBackground: true,
+    isBestTop: 6
   },
   {
     id: 80,
@@ -1305,11 +1359,10 @@ export const videos = [
     brand: "HONDA",
     type: "horizontal",
     category: "Tv",
+    tags: ['isBest'],
     year: 2023,
 
-    isBest: {
-      top: 7,
-    }
+    isBestTop: 7
   },
 
   {
@@ -1322,6 +1375,7 @@ export const videos = [
     brand: "Huski",
     type: "horizontal",
     category: "Tv",
+    tags: [],
     year: 2023
   },
 
@@ -1335,6 +1389,7 @@ export const videos = [
     brand: "StarBucks",
     type: "animation",
     category: "Tv",
+    tags: [],
     year: 2023
   },
 
@@ -1348,6 +1403,7 @@ export const videos = [
     brand: "HONDA",
     type: "horizontal",
     category: "Tv",
+    tags: [],
     year: 2023
   },
 
@@ -1361,6 +1417,7 @@ export const videos = [
     brand: "StarBucks",
     type: "animation",
     category: "Tv",
+    tags: [],
     year: 2023
   },
 
@@ -1375,6 +1432,7 @@ export const videos = [
     brand: "True Classic",
     type: "animation",
     category: "End-card",
+    tags: [],
     year: 2023,
   },
 
@@ -1388,6 +1446,7 @@ export const videos = [
     brand: "Kate Spade",
     type: "animation",
     category: "End-card",
+    tags: [],
     year: 2023
   },
 
@@ -1401,6 +1460,7 @@ export const videos = [
     brand: "Shein",
     type: "vertical",
     category: "End-card",
+    tags: [],
     year: 2023,
   },
 
@@ -1414,6 +1474,7 @@ export const videos = [
     brand: "Tecovas",
     type: "animation",
     category: "End-card",
+    tags: [],
     year: 2023
   },
 
@@ -1427,6 +1488,7 @@ export const videos = [
     brand: "Prose",
     type: "animation",
     category: "End-card",
+    tags: [],
     year: 2023
   },
 
@@ -1440,6 +1502,7 @@ export const videos = [
     brand: "Nutrl",
     type: "animation",
     category: "End-card",
+    tags: [],
     year: 2023
   },
 
@@ -1453,6 +1516,7 @@ export const videos = [
     brand: "Tecovas",
     type: "vertical",
     category: "End-card",
+    tags: [],
     year: 2023
   },
 
@@ -1466,9 +1530,8 @@ export const videos = [
     brand: "League of legends",
     type: "animation",
     category: "End-card",
+    tags: ['isBackground'],
     year: 2023,
-
-    isBackground: true
   },
 
   {
@@ -1481,6 +1544,7 @@ export const videos = [
     brand: "Olaplex",
     type: "animation",
     category: "End-card",
+    tags: [],
     year: 2023
   },
 
@@ -1495,6 +1559,7 @@ export const videos = [
     brand: "",
     type: "horizontal",
     category: "YouTube",
+    tags: [],
     year: 2023
   },
 
@@ -1508,6 +1573,7 @@ export const videos = [
     brand: "",
     type: "horizontal",
     category: "YouTube",
+    tags: [],
     year: 2023
   },
 
@@ -1521,13 +1587,10 @@ export const videos = [
     brand: "",
     type: "horizontal",
     category: "YouTube",
+    tags: ['isBest', 'isBackground'],
     year: 2023,
 
-    isBest: {
-      top: 8,
-    },
-
-    isBackground: true
+    isBestTop: 8
   },
 
   {
@@ -1540,6 +1603,7 @@ export const videos = [
     brand: "",
     type: "horizontal",
     category: "YouTube",
+    tags: [],
     year: 2023
   },
 
@@ -1553,6 +1617,7 @@ export const videos = [
     brand: "",
     type: "horizontal",
     category: "YouTube",
+    tags: [],
     year: 2023
   },
 
@@ -1560,7 +1625,7 @@ export const videos = [
 
 
 export async function loadVideosFetch() {
-  const promise = await fetch('https://fp-plus-emhtdmegc3e0gvb2.eastus2-01.azurewebsites.net/api/videos')
+  const promise = await fetch('fc')
   const videoData = await promise.json();
 
   console.log(videoData.videos)

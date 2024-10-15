@@ -14,7 +14,7 @@ export function loadBackgoundVideo() {
   })
 
   videos.forEach(video => {
-    if (video.isBackground) {
+    if (video.tags.includes('isBackground')) {
       html += `
         <div class="swiper-slide background-swiper-slide">
           <div class="background-video">

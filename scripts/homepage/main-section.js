@@ -120,11 +120,11 @@ export function loadSections() {
 
   function swiperSlideTop10() {
     videos.sort((a, b) => {
-      if (a.isBest && b.isBest) {
-        return a.isBest.top - b.isBest.top;
-      } else if (a.isBest) {
+      if (a.isBestTop && b.isBestTop) {
+        return a.isBestTop - b.isBestTop;
+      } else if (a.isBestTop) {
         return -1;
-      } else if (b.isBest) {
+      } else if (b.isBestTop) {
         return 1;
       } else {
         return 0;
@@ -134,14 +134,14 @@ export function loadSections() {
     let html = '';
 
     videos.forEach(video => {
-      if (video.isBest) {
+      if ((video.tags.includes('isBest'))) {
         html += `
           <div class="vertical-swiper-slide swiper-slide">
             <div class="vertical-card-container card-container">
               <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCategory=${video.category}" class="image-container">
                 <img class="thumbnail thumbnail-border" src="${video.image}">
                 <div class="top-number">
-                  <span class="secret-number">${video.isBest.top}</span>
+                  <span class="secret-number">${video.isBestTop}</span>
                 </div>
               </a>
             </div>
