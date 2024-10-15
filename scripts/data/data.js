@@ -209,6 +209,87 @@ export const logos = [
 
 ]
 
+class Video {
+  id;
+  title;
+  description;
+  top;
+  image;
+  video;
+  brand;
+  type;
+  category;
+  year;
+  tags;
+
+  constructor(videoDetails) {
+    this.id = videoDetails.id;
+    this.title = videoDetails.title;
+    this.description = videoDetails.description;
+    this.top = videoDetails.top;
+    this.image = videoDetails.image;
+    this.video = videoDetails.video;
+    this.brand = videoDetails.brand;
+    this.type = videoDetails.type;
+    this.category = videoDetails.category;
+    this.year = videoDetails.year;
+    this.tags = videoDetails.tags;
+  }
+
+  getCard(section) {
+    return `
+      <a href="show.html?videoId=${this.id}&videoType=${this.type}&videoCategory=${this.category}"
+      class="${section.type}-swiper-slide swiper-slide js-swiper-slide">
+        <div class="${section.type}-card-container card-container">
+          <div class="image-container">
+            <img class="thumbnail ${section.type}-thumbnail" src="${this.image}">
+            <button class="play-button">
+              <img src="images/icons/play.png">
+            </button>
+          </div>
+        </div>
+
+        ${this.getDescriptionCard()}
+      </a>
+    `
+  }
+
+  getDescriptionCard() {
+    return `
+      <div class="card-description">
+        <p class="card-number">${this.top}</p>
+        <div class="card-title">
+          <p>${this.title}</p>
+          <p class="card-year">${this.year} &#183; ${this.type}</p>
+        </div>
+      </div>
+    `;
+  }
+}
+
+class Top10 extends Video {
+  isBestTop;
+
+  constructor(videoDetails) {
+    super(videoDetails);
+    this.isBestTop = videoDetails.isBestTop;
+  }
+
+}
+
+class Original extends Video {
+  getDescriptionCard() {
+    return `
+        <div class="card-description">
+          <div class="card-title">
+            <p>${this.title}</p>
+            <p class="card-year">${this.year}</p>
+          </div>
+        </div>
+      `;
+  }
+}
+
 export const videos = [
   //animations
   {
@@ -1621,12 +1702,22 @@ export const videos = [
     tags: [],
   },
 
-]
+].map(videoDetails => {
+  if (videoDetails.tags.includes('isBest')) {
+    return new Top10(videoDetails);
+  }
+
+  if (videoDetails.category === 'originals') {
+    return new Original(videoDetails)
+  }
+
+  return new Video(videoDetails);
+});
 
 
-export async function loadVideosFetch() {
-  const promise = await fetch('fc')
-  const videoData = await promise.json();
+// export async function loadVideosFetch() {
+//   const promise = await fetch('fc')
+//   const videoData = await promise.json();
 
-  console.log(videoData.videos)
-}
+//   console.log(videoData.videos)
+// }

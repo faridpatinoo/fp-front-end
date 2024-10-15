@@ -78,25 +78,7 @@ export function loadSections() {
     videos.forEach(video => {
       if (video.top <= 10 && video.category === section.category) {
         html += `
-          <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCategory=${video.category}"
-          class="${section.type}-swiper-slide swiper-slide js-swiper-slide">
-            <div class="${section.type}-card-container card-container">
-              <div class="image-container">
-                <img class="thumbnail ${section.type}-thumbnail" src="${video.image}">
-                <button class="play-button">
-                  <img src="images/icons/play.png">
-                </button>
-              </div>
-            </div>
-
-            <div class="card-description">
-              <p class="card-number">${video.top}</p>
-              <div class="card-title">
-                <p>${video.title}</p>
-                <p class="card-year">${video.year} &#183; ${video.type}</p>
-              </div>
-            </div>
-          </a>
+          ${video.getCard(section)}
         `;
       }
     });
