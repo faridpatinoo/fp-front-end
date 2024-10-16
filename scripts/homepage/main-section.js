@@ -28,7 +28,7 @@ export function loadSections() {
       mainHTML += `
         <div class="original-container">
           <a href="section.html?videoCategory=${section.category}" class="original-image-container">
-            <img class="original-thumbnail" src="images/thumbs/Originals/originals-bkg.png">
+            <img class="original-thumbnail" src="images/extra/originals-banner.png">
           </a>
 
           <div class="original-info">
