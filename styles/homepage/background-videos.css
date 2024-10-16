@@ -37,9 +37,32 @@
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .bkg-video-title {
+    font-size: 30px;
+    width: 300px;
+  }
+}
+
+/* Pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+  .bkg-video-title {
+    font-size: 24px;
+    width: 100%;
+  }
+}
+
 .bkg-video-description {
-  width: 450px;
-  margin-bottom: 10px;
+  display: -webkit-box;           /* Crea un contenedor flexible */
+  -webkit-box-orient: vertical;   /* Orienta el contenedor en vertical */
+  -webkit-line-clamp: 3;          /* Limita el texto a 3 líneas */
+  overflow: hidden;               /* Oculta el texto desbordado */
+  text-overflow: ellipsis;        /* Muestra "..." al final del texto truncado */
+  max-width: 50%;                /* Asegura que no se desborde horizontalmente */
+  line-height: 1.5;               /* Ajusta la altura de la línea */
+  height: calc(1.5em * 3);        /* Calcula la altura para 3 líneas */
+
+  margin-bottom: 50px;
 }
 
 .bkg-video-button {
@@ -56,6 +79,22 @@
 
   font-size: 15px;
   font-weight: bold;
+}
+
+/* Pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+  .bkg-video-button {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+}
+
+/* Pantallas muy pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+  .bkg-video-button {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
 }
 
 .bkg-video-button:hover {

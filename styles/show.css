@@ -152,3 +152,14 @@
 .fix-title {
   padding-top: 8px;
 }
+
+
+.show-description p {
+  display: -webkit-box;           /* Crea un contenedor flexible */
+  -webkit-box-orient: vertical;   /* Orienta el contenedor en vertical */
+  -webkit-line-clamp: 3;          /* Limita el texto a 3 líneas */
+  overflow: hidden;               /* Oculta el texto desbordado */
+  text-overflow: ellipsis;        /* Muestra "..." al final del texto truncado */
+  max-width: 100%;                /* Asegura que no se desborde horizontalmente */
+  line-height: 1.5;               /* Ajusta la altura de la línea */
+}

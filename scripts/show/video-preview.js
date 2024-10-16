@@ -17,7 +17,7 @@ export function videoPreview() {
             <button class="play-button-preview js-play-button-preview">
               <img src="images/icons/play.png" alt="Play Icon"/> Play
             </button>
-            <div>
+            <div class="show-description">
               <p>${matchingVideo.description}</p>
             </div>
             <div class="description-category">
