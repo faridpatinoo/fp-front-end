@@ -14,7 +14,7 @@ export function videoPreview() {
         </div>
         <div class="brand-container">
           <div class="description-container">
-            <button class="play-button-preview">
+            <button class="play-button-preview js-play-button-preview">
               <img src="images/icons/play.png" alt="Play Icon"/> Play
             </button>
             <div>
@@ -34,5 +34,10 @@ export function videoPreview() {
 
   document.querySelector('.js-preview-container')
     .innerHTML = html;
+
+  document.querySelector('.js-play-button-preview')
+    .addEventListener('click', () => {
+      window.location.href = matchingVideo.video;
+    });
 }
 

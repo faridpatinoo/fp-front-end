@@ -48,163 +48,163 @@ export const sections = [
 export const logos = [
   {
     brand: "Huski",
-    logo: "images/logos/huski-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/huski-logo.png"
   },
   {
     brand: "HighScale",
-    logo: "images/logos/highScale-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/highScale-logo.png"
   },
   {
     brand: "Go Trandier",
-    logo: "images/logos/go-trendier-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/go-trendier-logo.png"
   },
 
   {
     brand: "Celsius",
-    logo: "images/logos/celsius-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/celsius-logo.png"
   },
 
   {
     brand: "LID",
-    logo: "images/logos/lid-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/lid-logo.png"
   },
   {
     brand: "Mercado Libre",
-    logo: "images/logos/mercadolibre-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/mercadolibre-logo.png"
   },
   {
     brand: "Mad Cave Studios",
-    logo: "images/logos/madcavestudios-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/madcavestudios-logo.png"
   },
   {
     brand: "Brilliant Earth",
-    logo: "images/logos/brilliantearth-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/brilliantearth-logo.png"
   },
   {
     brand: "Olaplex",
-    logo: "images/logos/olaplex-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/olaplex-logo.png"
   },
   {
     brand: "Prolon",
-    logo: "images/logos/prolon-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/prolon-logo.png"
   },
   {
     brand: "8Sheep",
-    logo: "images/logos/8sheep-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/8sheep-logo.png"
   },
 
   {
     brand: "Lumineux",
-    logo: "images/logos/lumineux-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/lumineux-logo.png"
   },
 
   {
     brand: "Kitsch",
-    logo: "images/logos/kitsch-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/kitsch-logo.png"
   },
 
   {
     brand: "SpoiledChild",
-    logo: "images/logos/spoiledchild-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/spoiledchild-logo.png"
   },
 
   {
     brand: "ContentJet",
-    logo: "images/logos/contentjet-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/contentjet-logo.png"
   },
 
   {
     brand: "Maelys",
-    logo: "images/logos/maelys-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/maelys-logo.png"
   },
 
   {
     brand: "Obvi",
-    logo: "images/logos/obvi-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/obvi-logo.png"
   },
 
   {
     brand: "Paramount+",
-    logo: "images/logos/paramount+-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/paramount+-logo.png"
   },
 
   {
     brand: "Nutrl",
-    logo: "images/logos/nutrl-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/nutrl-logo.png"
   },
 
   {
     brand: "Biohm",
-    logo: "images/logos/biohm-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/biohm-logo.png"
   },
   {
     brand: "Prose",
-    logo: "images/logos/prose-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/prose-logo.png"
   },
   {
     brand: "Detective For a Day",
-    logo: "images/logos/detectiveforaday-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/detectiveforaday-logo.png"
   },
   {
     brand: "Get Dirty",
-    logo: "images/logos/getdirty-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/getdirty-logo.png"
   },
   {
     brand: "Honey Love",
-    logo: "images/logos/honeylove-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/honeylove-logo.png"
   },
   {
     brand: "Kate Spade",
-    logo: "images/logos/katespade-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/katespade-logo.png"
   },
   {
     brand: "Laundry Sauce",
-    logo: "images/logos/laundrysauce-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/laundrysauce-logo.png"
   },
   {
     brand: "Tecovas",
-    logo: "images/logos/tecovas-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/tecovas-logo.png"
   },
   {
     brand: "Temu",
-    logo: "images/logos/temu-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/temu-logo.png"
   },
   {
     brand: "Toms",
-    logo: "images/logos/toms-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/toms-logo.png"
   },
 
   {
     brand: "WellTech",
-    logo: "images/logos/welltech-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/welltech-logo.png"
   },
   {
     brand: "StarBucks",
-    logo: "images/logos/starbucks-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/starbucks-logo.png"
   },
   {
     brand: "HONDA",
-    logo: "images/logos/honda-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/honda-logo.png"
   },
   {
     brand: "Planet Fitness",
-    logo: "images/logos/planetfitness-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/planetfitness-logo.png"
   },
   {
     brand: "True Classic",
-    logo: "images/logos/trueclassics-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/trueclassics-logo.png"
   },
   {
     brand: "Shein",
-    logo: "images/logos/shein-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/shein-logo.png"
   },
   {
     brand: "League of legends",
-    logo: "images/logos/lol-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/lol-logo.png"
   },
   {
     brand: "Wall Pilates",
-    logo: "images/logos/wallpilates-logo.png"
+    logo: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/logos/wallpilates-logo.png"
   },
 
 ]
