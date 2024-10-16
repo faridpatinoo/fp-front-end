@@ -290,6 +290,8 @@ class Original extends Video {
   }
 }
 
+//console.log(JSON.stringify(videos, null, 2));
+
 export const videos = [
   //animations
   {
@@ -1715,8 +1717,10 @@ export const videos = [
 });
 
 
+
+
 // export async function loadVideosFetch() {
-//   const promise = await fetch('fc')
+//   const promise = await fetch('https://fp-plus-emhtdmegc3e0gvb2.eastus2-01.azurewebsites.net/api/videos')
 //   const videoData = await promise.json();
 
 //   console.log(videoData.videos)
