@@ -300,8 +300,6 @@ class Original extends Video {
   }
 }
 
-//console.log(JSON.stringify(videos, null, 2));
-
 export const videos = [
   //animations
   {
@@ -1733,8 +1731,8 @@ export const videos = [
     title: "THIS is how I got rid of after-meal bloating",
     description: "Tired of feeling bloated after every meal? This simple pill offers quick relief and lasting results. Say goodbye to discomfort and enjoy your meals again!",
     top: 30,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-fb-30.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/fb-top-30.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-fb/top-fb-30.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/facebook/fb-top-30.mp4',
     brand: "Biohm",
     type: "square",
     category: "Facebook",
@@ -1747,8 +1745,8 @@ export const videos = [
     title: "This is fasting with proLon",
     description: "Experience the benefits of fasting without the struggle. ProLon's 5-day program nourishes your body while promoting cellular renewal and weight loss. It's fasting made easy!",
     top: 31,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-fb-31.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/fb-top-31.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-fb/top-fb-31.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/facebook/fb-top-31.mp4',
     brand: "Prolon",
     type: "square",
     category: "Facebook",
@@ -1761,8 +1759,8 @@ export const videos = [
     title: "BIOHM Total Gut Probiotic",
     description: "Balance your gut like never before. This advanced probiotic targets harmful bacteria and supports healthy digestion, helping you feel lighter and more energized every day. Optimize your gut health with BIOHM!",
     top: 32,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-fb-32.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/fb-top-32.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-fb/top-fb-32.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/facebook/fb-top-32.mp4',
     brand: "Biohm",
     type: "square",
     category: "Facebook",
@@ -1775,8 +1773,8 @@ export const videos = [
     title: "Say goodbye to bloating with this",
     description: "A powerful solution designed to relieve bloating fast. Feel lighter, more comfortable, and confident after every meal. The easy way to banish bloating for good!",
     top: 33,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-fb-33.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/fb-top-33.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-fb/top-fb-33.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/facebook/fb-top-33.mp4',
     brand: "Biohm",
     type: "square",
     category: "Facebook",
@@ -1789,8 +1787,8 @@ export const videos = [
     title: "This is why I don't have constipation",
     description: "Discover the secret to staying regular. With this effective formula, say goodbye to discomfort and enjoy smooth digestion every day. Feel the difference!",
     top: 34,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-fb-34.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/fb-top-34.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-fb/top-fb-34.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/facebook/fb-top-34.mp4',
     brand: "Biohm",
     type: "square",
     category: "Facebook",
@@ -1803,8 +1801,8 @@ export const videos = [
     title: "DeFi Dilemma: Trading or Borrowing?",
     description: "In this Grayscale video, explore the key differences between trading and borrowing in decentralized finance. Understand your options and make smarter moves with your digital assets!",
     top: 25,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-ig-25.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/re-top-25.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-ig/top-ig-25.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/reels/re-top-25.mp4',
     brand: "REBEL",
     type: "square",
     category: "Reel",
@@ -1817,8 +1815,8 @@ export const videos = [
     title: "This is why your probiotic is not working",
     description: "Discover the common mistakes that may be hindering your probiotic's effectiveness. Learn how to maximize your gut health and truly benefit from your probiotic for better digestion and overall wellness!",
     top: 26,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-ig-26.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/re-top-26.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-ig/top-ig-26.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/reels/re-top-26.mp4',
     brand: "Biohm",
     type: "square",
     category: "Reel",
@@ -1831,8 +1829,8 @@ export const videos = [
     title: "A Probiotic That Works",
     description: "Experience the difference with our powerful probiotic formula! Designed to support gut health, improve digestion, and boost your immune system, this is the probiotic you've been waiting for.",
     top: 10,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-tv-10.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/tv-top-10.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-tv/top-tv-10.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/tv/tv-top-10.mp4',
     brand: "Biohm",
     type: "horizontal",
     category: "tv",
@@ -1845,8 +1843,8 @@ export const videos = [
     title: "Probiotics Every Single Day",
     description: "Unlock the secret to optimal gut health with daily probiotics! Support digestion, boost immunity, and enhance your overall well-being with a consistent routine.",
     top: 11,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-tv-11.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/tv-top-11.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-tv/top-tv-11.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/tv/tv-top-11.mp4',
     brand: "Biohm",
     type: "horizontal",
     category: "tv",
@@ -1859,8 +1857,8 @@ export const videos = [
     title: "This is the real problem:",
     description: "Uncover the root causes of these common digestive issues and discover effective solutions to relieve discomfort.",
     top: 12,
-    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-yt/top-tv-12.png",
-    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/youtube/tv-top-12.mp4',
+    image: "https://fpplusstorageaccount.blob.core.windows.net/fpplusimagescontainer/top-tv/top-tv-12.png",
+    video: 'https://fpplusstorageaccount.blob.core.windows.net/fpplusstoragecontainer/tv/tv-top-12.mp4',
     brand: "Biohm",
     type: "horizontal",
     category: "tv",
@@ -1879,6 +1877,8 @@ export const videos = [
 
   return new Video(videoDetails);
 });
+
+//console.log(JSON.stringify(videos, null, 2));
 
 
 
