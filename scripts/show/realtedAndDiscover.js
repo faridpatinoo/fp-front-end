@@ -2,7 +2,7 @@ import { videos } from "../data/data.js";
 
 export function relatedAndDiscover() {
   const url = new URL(window.location.href);
-  const videoId = Number(url.searchParams.get('videoId'));
+  const videoId = url.searchParams.get('videoId');
   const videoType = url.searchParams.get('videoType');
   const videoCategory = url.searchParams.get('videoCategory');
 
@@ -11,9 +11,9 @@ export function relatedAndDiscover() {
 
 
   videos.sort(() => Math.random() - 0.5).forEach(video => {
-    if (video.type === videoType && video.id !== videoId) {
+    if (video.type === videoType && video._id !== videoId) {
       relatedHTML += `
-        <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCategory=${video.category}"
+        <a href="show.html?videoId=${video._id}&videoType=${video.type}&videoCategory=${video.category}"
         class="horizontal-swiper-slide swiper-slide">
           <div class="card-container">
             <div class="image-container">
@@ -35,9 +35,9 @@ export function relatedAndDiscover() {
       `;
     }
 
-    if (video.category === videoCategory && video.id !== videoId) {
+    if (video.category === videoCategory && video._id !== videoId) {
       discoverHTML += `
-          <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCategory=${video.category}"
+          <a href="show.html?videoId=${video._id}&videoType=${video.type}&videoCategory=${video.category}"
           class="horizontal-swiper-slide swiper-slide">
             <div class="card-container">
               <div class="image-container">

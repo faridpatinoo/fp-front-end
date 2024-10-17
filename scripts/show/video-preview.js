@@ -2,9 +2,9 @@ import { videos } from "../data/data.js";
 
 export function videoPreview() {
   const url = new URL(window.location.href);
-  const videoId = Number(url.searchParams.get('videoId'));
+  const videoId = url.searchParams.get('videoId');
 
-  let matchingVideo = videos.find(video => video.id === videoId);
+  let matchingVideo = videos.find(video => video._id === videoId);
   let html = '';
 
   if (matchingVideo) {

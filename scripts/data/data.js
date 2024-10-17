@@ -220,7 +220,7 @@ export const logos = [
 ]
 
 class Video {
-  id;
+  _id;
   title;
   description;
   top;
@@ -233,7 +233,7 @@ class Video {
   tags;
 
   constructor(videoDetails) {
-    this.id = videoDetails.id;
+    this._id = videoDetails._id;
     this.title = videoDetails.title;
     this.description = videoDetails.description;
     this.top = videoDetails.top;
@@ -248,7 +248,7 @@ class Video {
 
   getCard(section) {
     return `
-      <a href="show.html?videoId=${this.id}&videoType=${this.type}&videoCategory=${this.category}"
+      <a href="show.html?videoId=${this._id}&videoType=${this.type}&videoCategory=${this.category}"
       class="${section.type}-swiper-slide swiper-slide js-swiper-slide">
         <div class="${section.type}-card-container card-container">
           <div class="image-container">
@@ -300,6 +300,7 @@ class Original extends Video {
   }
 }
 
+/*
 export const videos = [
   //animations
   {
@@ -1877,15 +1878,30 @@ export const videos = [
 
   return new Video(videoDetails);
 });
+*/
 
 //console.log(JSON.stringify(videos, null, 2));
 
 
+export let videos = [];
 
+export async function loadVideosFetch() {
+  const response = await fetch('https://fp-plus-emhtdmegc3e0gvb2.eastus2-01.azurewebsites.net/api/videos');
 
-// export async function loadVideosFetch() {
-//   const promise = await fetch('https://fp-plus-emhtdmegc3e0gvb2.eastus2-01.azurewebsites.net/api/videos')
-//   const videoData = await promise.json();
+  const videoData = await response.json();
+  const videosArray = videoData.videos;
 
-//   console.log(videoData.videos)
-// }
+  videos = videosArray.map((videoDetails) => {
+    if (videoDetails.tags.includes('isBest')) {
+      return new Top10(videoDetails);
+    }
+
+    if (videoDetails.category === 'originals') {
+      return new Original(videoDetails)
+    }
+
+    return new Video(videoDetails);
+  });
+
+  return videos;
+}
