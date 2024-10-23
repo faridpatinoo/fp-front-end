@@ -1,8 +1,8 @@
 import { videos } from "./data/data.js";
-import { loadVideosFetch } from "./data/data.js";
+//import { loadVideosFetch } from "./data/data.js";
 
 async function loadSectionPage() {
-  await loadVideosFetch();
+  //await loadVideosFetch();
 
   sectionPage();
 }
