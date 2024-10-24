@@ -1,13 +1,13 @@
 import { videos } from "./data/data.js";
 //import { loadVideosFetch } from "./data/data.js";
 
-async function loadSectionPage() {
-  //await loadVideosFetch();
+//async function loadSectionPage() {
+//await loadVideosFetch();
 
-  sectionPage();
-}
+sectionPage();
+//}
 
-loadSectionPage();
+//loadSectionPage();
 
 function sectionPage() {
   const url = new URL(window.location.href);

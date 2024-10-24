@@ -3,13 +3,13 @@ import { loadBackgoundVideo } from "./homepage/bkg-video.js";
 import { loadSections } from "./homepage/main-section.js";
 //import { loadVideosFetch } from "./data/data.js";
 
-async function loadFPhomepage() {
-  //await loadVideosFetch();
+//async function loadFPhomepage() {
+//await loadVideosFetch();
 
-  loadBackgoundVideo();
-  loadSections();
-  swipers();
-}
+loadBackgoundVideo();
+loadSections();
+swipers();
+//}
 
-loadFPhomepage();
+//loadFPhomepage();
 

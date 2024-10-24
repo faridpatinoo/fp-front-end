@@ -233,7 +233,7 @@ class Video {
   tags;
 
   constructor(videoDetails) {
-    this._id = videoDetails._id;
+    this.id = videoDetails.id;
     this.title = videoDetails.title;
     this.description = videoDetails.description;
     this.top = videoDetails.top;
@@ -248,7 +248,7 @@ class Video {
 
   getCard(section) {
     return `
-      <a href="show.html?videoId=${this._id}&videoType=${this.type}&videoCategory=${this.category}"
+      <a href="show.html?videoId=${this.id}&videoType=${this.type}&videoCategory=${this.category}"
       class="${section.type}-swiper-slide swiper-slide js-swiper-slide">
         <div class="${section.type}-card-container card-container">
           <div class="image-container">

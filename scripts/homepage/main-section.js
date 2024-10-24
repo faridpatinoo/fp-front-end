@@ -120,7 +120,7 @@ export function loadSections() {
         html += `
           <div class="vertical-swiper-slide swiper-slide">
             <div class="vertical-card-container card-container">
-              <a href="show.html?videoId=${video._id}&videoType=${video.type}&videoCategory=${video.category}" class="image-container">
+              <a href="show.html?videoId=${video.id}&videoType=${video.type}&videoCategory=${video.category}" class="image-container">
                 <img class="thumbnail thumbnail-border" src="${video.image}">
                 <div class="top-number">
                   <span class="secret-number">${video.isBestTop}</span>
