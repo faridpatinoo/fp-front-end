@@ -219,6 +219,9 @@ export const logos = [
 
 ]
 
+const tojson = JSON.stringify(logos);
+console.log(tojson)
+
 class Video {
   _id;
   title;
@@ -1886,7 +1889,7 @@ export const videos = [
 export let videos = [];
 
 export async function loadVideosFetch() {
-  const response = await fetch('https://fp-plus-emhtdmegc3e0gvb2.eastus2-01.azurewebsites.net/api/videos');
+  const response = await fetch('https://fp-back-end-ajdfckgxadcye7fy.eastus2-01.azurewebsites.net/api/videos');
 
   const videoData = await response.json();
   const videosArray = videoData.videos;

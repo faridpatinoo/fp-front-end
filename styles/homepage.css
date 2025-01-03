@@ -15,6 +15,11 @@
   display: inline-block;
 }
 
+.section-title:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 /* top-card */
 
 .card-container { /* horizontal container */
