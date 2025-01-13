@@ -1889,7 +1889,7 @@ export const videos = [
 export let videos = [];
 
 export async function loadVideosFetch() {
-  const response = await fetch('https://fp-back-end-ajdfckgxadcye7fy.eastus2-01.azurewebsites.net/api/videos');
+  const response = await fetch('https://fpplus-backend-docker-a9agb7hgdzdze2gd.eastus2-01.azurewebsites.net/api/videos');
 
   const videoData = await response.json();
   const videosArray = videoData.videos;
